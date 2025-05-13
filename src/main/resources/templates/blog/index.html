@@ -5,7 +5,7 @@
 <meta name="Keywords" th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: /meta[@name='Keywords']} : ~{articles/blog-index_en :: /meta[@name='Keywords']}" />
 <meta name="Description" th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: /meta[@name='Description']} : ~{articles/blog-index_en :: /meta[@name='Description']}" />
 <link rel="stylesheet" th:href="${#locale.country == 'KR'} ? '/static/css/korean.css' : '/static/css/english.css'" type="text/css" />
-<link rel="stylesheet" href="/static/css/blog.css" type="text/css" />
+<link rel="stylesheet" th:href="@{/static/css/blog.css}" type="text/css" />
 </head>
 <body>
 <!-- article -->

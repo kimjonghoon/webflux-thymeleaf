@@ -33,7 +33,7 @@ public class AppConfig implements ApplicationContextAware, WebFluxConfigurer {
 
 	@Override
 	public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/static/**").addResourceLocations("/static/");
+		registry.addResourceHandler("/static/**").addResourceLocations("classpath:static/");
 	}
 
 	@Bean
@@ -67,7 +67,6 @@ public class AppConfig implements ApplicationContextAware, WebFluxConfigurer {
 	public ThymeleafReactiveViewResolver viewResolver() {
 		ThymeleafReactiveViewResolver viewResolver = new ThymeleafReactiveViewResolver();
 		viewResolver.setTemplateEngine(templateEngine());
-		//viewResolver.setCharacterEncoding("UTF-8");
 		viewResolver.setResponseMaxChunkSizeBytes(16348);
 		return viewResolver;
 	}
