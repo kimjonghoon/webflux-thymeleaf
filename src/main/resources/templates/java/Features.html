@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/baseLayoutFile :: layout(~{::title}, ~{::meta}, ~{::link}, ~{::script}, ~{::section}, ~{::article}, ~{::aside})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:replace="${#locale.country == 'KR'} ? ~{articles/Features :: title} : ~{articles/Features_en :: title}">Java Install</title>
+<meta name="Keywords" th:replace="${#locale.country == 'KR'} ? ~{articles/Features :: /meta[@name='Keywords']} : ~{articles/Features_en :: /meta[@name='Keywords']}" />
+<meta name="Description" th:replace="${#locale.country == 'KR'} ? ~{articles/Features :: /meta[@name='Description']} : ~{articles/Features_en :: /meta[@name='Description']}" />
+<link rel="stylesheet" th:href="${#locale.country == 'KR'} ? '/static/css/korean.css' : '/static/css/english.css'" type="text/css" />
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/commons.js"></script>
+</head>
+<body>
+<!-- article -->
+<section th:replace="${#locale.country == 'KR'} ? ~{articles/Features :: article} : ~{articles/Features_en :: article}"></section>
+<!--  next and prev -->
+<article>
+<div id="next-prev">
+	<th:block th:switch="${#locale.country}">
+		<ul th:case="'KR'">
+			<li>다음 : <a href="/java/Class-Object">객체와 클래스</a></li>
+			<li>이전 : <a href="/">자바 설치</a></li>
+		</ul>
+		<ul th:case="*">
+			<li>Next : <a href="/java/Class-Object">Class and Object</a></li>
+			<li>Prev : <a href="/">Java Install</a></li>
+		</ul>
+	</th:block>		
+</div>
+</article>
+<!-- sub menu -->
+<aside th:replace="${#locale.country == 'KR'} ? ~{java/menu :: index} : ~{java/menu_en :: index}"></aside>
+</body>
+</html>

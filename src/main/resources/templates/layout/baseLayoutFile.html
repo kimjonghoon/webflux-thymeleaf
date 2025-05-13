@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" th:fragment="layout (title, metas, links, scripts, content, nextprev, submenu)" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:replace="${title}">Layout Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<th:block th:replace="${metas}" />
+<link rel="stylesheet" href="/static/css/screen.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/print.css" type="text/css" />
+<th:block th:replace="${links}" />
+<th:block th:replace="${scripts}" />
+</head>
+<body>
+	<div id="wrap">
+	
+		<div id="header">
+			<div id="java-school-ci">
+				<a href="/"><img src="/static/images/ci.gif" alt="java-school" /></a>
+			</div>
+		</div>
+		
+		<div id="main-menu">
+			<ul id="nav">
+			    <li><a href="/java/Features">Java</a></li>
+			    <li><a href="/jdbc/JDBC-Intro">JDBC</a></li>
+			    <li><a href="/jsp/How-to-install-Tomcat">JSP</a></li>
+			    <li><a href="/css-layout/div-element-arrangement">CSS Layout</a></li>
+			    <li><a href="/jsp-pjt/Dynamic-Web-Project-Set-Up">JSP Project</a></li>
+			    <li><a href="/spring/building-java-projects-with-maven">Spring</a></li>
+			    <li><a href="/javascript/introduction">JavaScript</a></li>
+			    <li><a href="/google-app-engine/building-gae-projects-with-maven">Google Cloud</a></li>
+			    <li><a href="/blog">Blog</a></li>
+			</ul>		
+		</div>
+
+		<div id="i18n" style="height: 23px;">
+		</div>
+		
+		<div id="container">		
+			<div id="content">
+				<th:block th:replace="${content}" />
+				<th:block th:replace="${nextprev}" />
+			</div>
+		</div>	
+		
+		<div th:replace="${submenu}">
+			Layout Sub menu	
+		</div>
+		
+		<div id="extra">
+		</div>
+
+		<div id="footer">
+			<ul>
+				<li>Copyright java-school All Rights Reserved.</li>
+			</ul>
+		</div>
+
+	</div>
+	
+</body>
+</html>

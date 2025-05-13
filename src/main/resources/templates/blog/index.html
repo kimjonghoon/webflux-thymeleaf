@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/baseLayoutFile :: layout(~{::title}, ~{::meta}, ~{::link}, ~{}, ~{::section}, ~{::article}, ~{::aside})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: title} : ~{articles/blog-index_en :: title}">Java Install</title>
+<meta name="Keywords" th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: /meta[@name='Keywords']} : ~{articles/blog-index_en :: /meta[@name='Keywords']}" />
+<meta name="Description" th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: /meta[@name='Description']} : ~{articles/blog-index_en :: /meta[@name='Description']}" />
+<link rel="stylesheet" th:href="${#locale.country == 'KR'} ? '/static/css/korean.css' : '/static/css/english.css'" type="text/css" />
+<link rel="stylesheet" href="/static/css/blog.css" type="text/css" />
+</head>
+<body>
+<!-- article -->
+<section th:replace="${#locale.country == 'KR'} ? ~{articles/blog-index :: article} : ~{articles/blog-index_en :: article}"></section>
+<!--  next and prev -->
+<article th:replace="~{}"></article>
+<!-- sub menu -->
+<aside th:replace="~{}"></aside>
+</body>
+</html>

@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+@media only print {
+	table {
+		border-collapse: collapse;
+	}
+	img {
+		border: 0; 
+	}
+	form { 
+		margin: 0;
+		padding: 0; 
+	}
+	a:link {
+		color: #2C80D0;
+		text-decoration: none;
+	}
+	a:visited {
+		color: #2C80D0;
+		text-decoration: none;
+	}
+	a:active {
+		color: #2C80D0;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #2C80D0;
+		text-decoration: underline;
+	}
+	#header {
+		display: none;
+	}
+	#main-menu {
+		display: none;
+	}
+	#sidebar {
+		display: none;
+	}
+	#extra {
+		display: none;
+	}
+	#footer {
+		display: none;
+	}
+	article table {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	article td {
+		padding: 5px 6px 3px 6px;
+		border: silver 1px solid;
+	}
+	article th {
+		padding: 5px 6px 3px 6px;
+		border: silver 1px solid;
+		text-align: left;
+		border: silver 1px solid;
+	}
+	article caption {
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+		text-align: left;
+	}
+	article > h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.45em;	
+	}
+	article > h2 {
+		margin-top: 15px;
+		margin-bottom: 0;
+		font-size: 1.2em;
+	}
+	article > h3 {
+		margin-top: 10px;
+		margin-bottom: 0;
+		font-size: 1.1em;
+	}
+	article > h4 {
+		margin-top: 5px;
+		margin-bottom: 0;
+		font-size: 1em;
+	}
+	article > h5 {
+		margin-top: 3px;
+		margin-bottom: 0;
+		font-size: 1em;
+		color: #999;	
+	}
+	article p {
+		font-size: 0.93em;
+	}
+	h6 {
+		margin: 0;
+		padding: 0;
+	}
+	.src {
+		margin: 0.7em 0 0 0;
+		font-weight: normal;
+		font-size: 0.9em;
+	}
+	.last-modified {
+		font-size: 11px;
+		font-family: tahoma, arial, sans-serif;
+		font-style: italic;		
+		color: #7a7a7a;
+	}
+	#next-prev {
+		margin-top: 10px;
+		padding: 1em 1em 1em 0;
+		border: silver 1px solid;
+		line-height: 1.7;
+		font-size: 0.85em;
+	}
+	#next-prev > ul {
+		list-style-type: none;
+		margin: 0 0 0 1em;
+		padding: 0;
+	}
+	#next-prev > ul > li {
+		padding: 0.2em 0 0.2em 0.5em;
+		background: url('../images/circle.gif') no-repeat 0% 50%;
+	}
+	#refer {
+		display: block;
+		margin-top: 15px;
+		padding-bottom: 3px;
+		color: #236CAC;
+		font-weight: bold;
+		line-height: 1;
+		border-bottom: 2px solid #236CAC;
+	}
+	#comments {
+		display: block;
+		margin-top: 15px;
+		padding-bottom: 3px;
+		color: #666;
+		font-weight: bold;
+		line-height: 1;
+		border-bottom: 1px solid #999;
+	}
+	#references {
+		margin-top: 5px;
+		padding: 0;
+		list-style-type: none;
+	}
+	#related-articles {
+		display: block;
+		margin-top: 15px;
+		padding-bottom: 3px;
+		color: #236CAC;
+		font-weight: bold;
+		line-height: 1;
+		border-bottom: 2px solid #236CAC;
+	}
+	#related-articles-ul {
+		margin-top: 5px;
+		padding: 0;
+		list-style-type: none;
+	}
+	.screen-header {
+		padding-left: 5px;
+		display: block;
+		color: black;
+		border-top: 2px solid silver;
+		border-right: 2px solid silver;
+		border-left: 2px solid silver;
+		font-size: 0.9em;
+	}
+	.screen-header > b {
+		background: #000;
+		color: #FFF;
+	}
+	.screen {
+		margin: 0;
+		padding: 0.2em;
+		color: #333;
+		border: 2px solid silver;
+		font-weight: bold;
+	}
+	.shell-prompt {
+		padding: 5px;
+		color: #333;
+		border: 1px solid #300a24;
+	}
+	.note {
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 0.9em;
+	}
+	.note > dt {
+		margin: 0;
+		padding-top: 4px;
+		padding-right: 3px;
+		padding-left: 43px;
+		padding-bottom: 3px;
+		margin-bottom: 3px;
+		color: #000;
+		background: #efefef url('../images/ref.png') no-repeat center left;
+	}
+	.result {
+		padding: 5px;
+		border: 1px solid grey;
+	}
+	article > ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	article > ul > li {
+		padding: 0.2em 0 0.2em 0.5em;
+		background: url('../images/circle.gif') no-repeat 0% 50%;
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
+	.no-border {
+		border: none !important;
+		margin: 0.4em 0;
+	}
+	.api-summary {
+		border: 1px solid #C8CDD2;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+		font-size: 0.88em;
+		line-height: 1.6;
+	}
+	.api-summary-dt {
+		font-weight: bold;
+		padding-left: 5px;
+	}
+	.api-summary-dd {
+		color: #666;
+		margin-left: 10px;
+		font-style: normal;
+		font-weight: bold;
+	}
+	.api-summary-dd-class-desc {
+		font-style: normal;
+		font-weight: normal;
+		margin: 0;
+		padding: 3px 5px 0 5px;
+	}
+	.bottom-line {
+		border-bottom: 1px solid #C8CDD2;
+	}
+	.api-summary-dd-method-desc {
+		font-style: normal;
+		font-weight: normal;
+		margin-left: 1.5em;
+	}
+	.addthis_javaschool {
+		display: none;
+	}
+	#i18n {
+		display: none;
+	}
+}
