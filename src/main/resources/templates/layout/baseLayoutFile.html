@@ -11,52 +11,52 @@
 <th:block th:replace="${scripts}" />
 </head>
 <body>
-	<div id="wrap">
-	
-		<div id="header">
-			<div id="java-school-ci">
-				<a th:href="@{/}"><img th:src="@{/static/images/ci.gif}" alt="java-school" /></a>
-			</div>
-		</div>
-		
-		<div id="main-menu">
-			<ul id="nav">
-			    <li><a href="#">Java</a></li>
-			    <li><a href="#">JDBC</a></li>
-			    <li><a href="#">JSP</a></li>
-			    <li><a href="#">CSS Layout</a></li>
-			    <li><a href="#">JSP Project</a></li>
-			    <li><a href="#">Spring</a></li>
-			    <li><a href="#">JavaScript</a></li>
-			    <li><a href="#">Google Cloud</a></li>
-			    <li><a href="/blog">Blog</a></li>
-			</ul>		
-		</div>
+<div id="wrap">
 
-		<div id="i18n" style="height: 23px;">
+	<div id="header">
+		<div id="java-school-ci">
+			<a th:href="@{/}"><img th:src="@{/static/images/ci.gif}" alt="java-school" /></a>
 		</div>
-		
-		<div id="container">		
-			<div id="content">
-				<th:block th:replace="${content}" />
-				<th:block th:replace="${nextprev}" />
-			</div>
-		</div>	
-		
-		<div th:replace="${submenu}">
-			Layout Sub menu	
-		</div>
-		
-		<div id="extra">
-		</div>
-
-		<div id="footer">
-			<ul>
-				<li>Copyright java-school All Rights Reserved.</li>
-			</ul>
-		</div>
-
 	</div>
 	
+	<div id="main-menu">
+		<ul id="nav">
+		    <li><a th:href="@{/java/features}">Java</a></li>
+		    <li><a th:href="@{#}">JDBC</a></li>
+		    <li><a th:href="@{#}">JSP</a></li>
+		    <li><a th:href="@{#}">CSS Layout</a></li>
+		    <li><a th:href="@{#}">JSP Project</a></li>
+		    <li><a th:href="@{#}">Spring</a></li>
+		    <li><a th:href="@{#}">JavaScript</a></li>
+		    <li><a th:href="@{#}">Google Cloud</a></li>
+		    <li><a th:href="@{/blog}">Blog</a></li>
+		</ul>		
+	</div>
+
+	<div id="i18n" style="height: 23px;">
+	</div>
+	
+	<div id="container">		
+		<div id="content">
+			<th:block th:replace="${content}" />
+			<th:block th:replace="${nextprev}" />
+		</div>
+	</div>	
+	
+	<div th:replace="${submenu}">
+		Layout Sub menu	
+	</div>
+	
+	<div id="extra">
+	</div>
+
+	<div id="footer">
+		<ul>
+			<li>Copyright java-school All Rights Reserved.</li>
+		</ul>
+	</div>
+
+</div>
+
 </body>
 </html>

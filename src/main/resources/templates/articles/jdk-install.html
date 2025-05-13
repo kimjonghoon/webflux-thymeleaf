@@ -1,9 +1,11 @@
-<!--/*/
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
 <title>Java 설치</title>
 <meta name="Keywords" content="자바 설치,Java Install,JDK 설치,JDK Install,PATH,-cp,-classpath" />
 <meta name="Description" content="자바 설치와 개발 환경 설정에 대해 설명합니다" />
-/*/-->
+</head>
 
+<body>
 <article>
 
 <h1>Java 설치</h1>
@@ -214,11 +216,13 @@ cp 옵션 다음은 클래스 파일이 있는 디렉터리다.<br />
 <h2>에디터 선택</h2>
 
 <p>
-<a href="/java/Package_Modifiers">패키지와 접근자</a>까지 
+<a th:href="@{#}">패키지와 접근자</a>까지 
 <a href="http://www.editplus.com/kr/">에디트플러스</a>나 
-<a href="https://notepad-plus-plus.org/download/v7.5.6.html">Notepad++</a>
+<a href="https://notepad-plus-plus.org/download/">Notepad++</a>
 같은 단순한 에디터를 사용하는 게 좋다.<br />
 패키지와 접근자를 학습한 후에 이클립스를 사용한다.
 </p>
 
 </article>
+</body>
+</html>
