@@ -20,7 +20,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebFlux
-@ComponentScan("net.java_school.blog, net.java_school.users")
+@ComponentScan("net.java_school.blog")
 public class AppConfig implements ApplicationContextAware, WebFluxConfigurer {
 
 	@Autowired
