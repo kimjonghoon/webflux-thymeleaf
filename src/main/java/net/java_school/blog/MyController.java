@@ -28,4 +28,9 @@ public class MyController {
 	public String getBlogHome() {
 		return "blog/index";
 	}
+
+	@GetMapping("blog/{year:\\d+}/{post}")
+	public String getPost(@PathVariable("year") Integer year, @PathVariable("post") String post) {
+		return "blog/" + year + "/" + post;
+	}
 }
